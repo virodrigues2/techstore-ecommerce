@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore - Loja Virtual Simples</title>
+
+  <!--
+    Projeto: Página inicial de e-commerce simples
+    Disciplina: HTML Semântico e CSS
+    Desenvolvido por: Vitória Mendes Rodrigues
+  -->
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Link de pular para o conteúdo principal (acessibilidade) -->
+  <a href="#inicio" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- =========================
+       CABEÇALHO / MENU
+       ========================= -->
+  <header class="topo">
+    <div class="container topo__conteudo">
+      <h1 class="logo">TechStore</h1>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <ul class="menu__lista">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================
+       CONTEÚDO PRINCIPAL
+       ========================= -->
+  <main id="inicio">
+    <!-- Seção de destaque / hero -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero__conteudo">
+        <div>
+          <h2 id="titulo-hero">A sua loja de tecnologia favorita ✨</h2>
+          <p>
+            Encontre os melhores gadgets com ótimos preços, entrega rápida
+            e suporte que realmente te ajuda.
+          </p>
+          <a href="#produtos" class="botao botao--primario">
+            Ver produtos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de produtos -->
+    <section id="produtos" class="secao-produtos" aria-labelledby="titulo-produtos">
+      <div class="container">
+        <h2 id="titulo-produtos">Produtos em destaque</h2>
+
+        <div class="produtos-grid">
+          <!-- Produto 1 -->
+          <article class="produto-card">
+            <img
+              src="https://via.placeholder.com/400x260?text=Fone+Bluetooth"
+              alt="Fone de ouvido Bluetooth preto com estojo de carregamento"
+              class="produto-card__imagem"
+            />
+            <div class="produto-card__conteudo">
+              <h3 class="produto-card__titulo">Fone Bluetooth Pro</h3>
+              <p class="produto-card__descricao">
+                Som de alta qualidade, cancelamento de ruído e bateria de longa duração.
+                Ideal para estudar, trabalhar e maratonar séries.
+              </p>
+              <p class="produto-card__preco">R$ 249,90</p>
+              <button type="button" class="botao botao--secundario">
+                Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 2 -->
+          <article class="produto-card">
+            <img
+              src="https://via.placeholder.com/400x260?text=Teclado+Mec%C3%A2nico"
+              alt="Teclado mecânico com teclas iluminadas em várias cores"
+              class="produto-card__imagem"
+            />
+            <div class="produto-card__conteudo">
+              <h3 class="produto-card__titulo">Teclado Mecânico RGB</h3>
+              <p class="produto-card__descricao">
+                Teclas confortáveis, iluminação personalizável e alta durabilidade.
+                Perfeito para programar e jogar.
+              </p>
+              <p class="produto-card__preco">R$ 349,90</p>
+              <button type="button" class="botao botao--secundario">
+                Comprar
+              </button>
+            </div>
+          </article>
+
+          <!-- Produto 3 -->
+          <article class="produto-card">
+            <img
+              src="https://via.placeholder.com/400x260?text=Mouse+Sem+fio"
+              alt="Mouse sem fio ergonômico na cor preta"
+              class="produto-card__imagem"
+            />
+            <div class="produto-card__conteudo">
+              <h3 class="produto-card__titulo">Mouse Sem Fio Ergonomic</h3>
+              <p class="produto-card__descricao">
+                Design ergonômico, conexão estável e alta precisão.
+                Cuide da sua produtividade e do seu conforto.
+              </p>
+              <p class="produto-card__preco">R$ 129,90</p>
+              <button type="button" class="botao botao--secundario">
+                Comprar
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contato" class="secao-contato" aria-labelledby="titulo-contato">
+      <div class="container">
+        <h2 id="titulo-contato">Contato</h2>
+        <p>
+          Precisa de ajuda com algum pedido ou produto? Fale com a nossa equipe:
+        </p>
+        <ul class="contato__lista">
+          <li><strong>E-mail:</strong> atendimento@techstore.com</li>
+          <li><strong>WhatsApp:</strong> (31) 99999-9999</li>
+          <li><strong>Horário de atendimento:</strong> 09h às 18h (seg. a sex.)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       RODAPÉ
+       ========================= -->
+  <footer class="rodape">
+    <div class="container rodape__conteudo">
+      <p>&copy; 2025 TechStore. Todos os direitos reservados.</p>
+      <p>
+        Desenvolvido por <strong>Vitória Mendes Rodrigues</strong> como atividade de
+        HTML semântico e CSS estilizado.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
